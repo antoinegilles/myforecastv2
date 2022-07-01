@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "myforecast",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

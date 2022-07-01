@@ -1,0 +1,23 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+.click-chip, .click-chip-hover{
+  padding: 0.2em 0.6em;
+  border-radius: 3em;
+  display: inline-flex;
+  margin: 0.3em;
+  cursor: pointer;
+
+}
+.itemSpot{
+margin: auto;
+}
+
+

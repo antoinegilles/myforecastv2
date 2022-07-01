@@ -1,0 +1,81 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <h3> Prévisions du jour en noeuds</h3>
+
+      <ion-item>
+        <ion-select class="itemSpot" value="48518" [(ngModel)]="spot" placeholder="Selectionez le spot"
+          (ionChange)="getData()">
+          <ion-select-option value="48414">Sables d'or</ion-select-option>
+          <ion-select-option value="190">Saint Jean de Monts</ion-select-option>
+          <ion-select-option value="198">Saint Brévin-les-Pins</ion-select-option>
+          <ion-select-option value="48518">Fromentine</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Prévisions du jour</ion-card-subtitle>
+        <ion-card-title>{{dateJour()}}</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <div>
+          <div class="click-chip" [ngStyle]="couleur(previsionsJour[0].aujourdhui)">05H00</div>
+          <span>{{previsionsJour[0].aujourdhui}} noeuds</span>
+        </div>
+        <div>
+          <div class="click-chip" [ngStyle]="couleur(previsionsJour[1].aujourdhui)">07H00</div>
+          <span>{{previsionsJour[1].aujourdhui}} noeuds</span>
+        </div>
+
+        <div>
+          <div class="click-chip" [ngStyle]="couleur(previsionsJour[2].aujourdhui)">09H00</div>
+          <span>{{previsionsJour[2].aujourdhui}} noeuds</span>
+        </div>
+
+        <div>
+          <div class="click-chip" [ngStyle]="couleur(previsionsJour[3].aujourdhui)">11H00</div>
+          <span>{{previsionsJour[3].aujourdhui}} noeuds</span>
+        </div>
+
+
+
+        <div>
+          <div class="click-chip" [ngStyle]="couleur(previsionsJour[4].aujourdhui)">13H00</div>
+          <span>{{previsionsJour[4].aujourdhui}} noeuds</span>
+        </div>
+
+
+
+        <div>
+          <div class="click-chip" [ngStyle]="couleur(previsionsJour[5].aujourdhui)">15H00</div>
+          <span>{{previsionsJour[5].aujourdhui}} noeuds</span>
+        </div>
+
+
+
+        <div>
+          <div class="click-chip" [ngStyle]="couleur(previsionsJour[6].aujourdhui)">17H00</div>
+          <span>{{previsionsJour[6].aujourdhui}} noeuds</span>
+        </div>
+
+
+
+        <div>
+          <div class="click-chip" [ngStyle]="couleur(previsionsJour[7].aujourdhui)">19H00</div>
+          <span>{{previsionsJour[7].aujourdhui}} noeuds</span>
+        </div>
+
+
+
+        <div>
+          <div class="click-chip" [ngStyle]="couleur(previsionsJour[8].aujourdhui)">21H00</div>
+          <span>{{previsionsJour[8].aujourdhui}} noeuds</span>
+        </div>
+
+
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>

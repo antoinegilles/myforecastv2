@@ -1,0 +1,77 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+      <h3> Choisissez vos prévisions</h3>
+
+      <ion-card>
+        <br>
+        <h6><b>Premier Spot</b></h6>
+        <ion-item>
+          <ion-label>Lieu</ion-label>
+          <ion-select [(ngModel)]="spot1" placeholder="Selectionez le spot">
+            <ion-select-option value="48414">Sables d'or</ion-select-option>
+            <ion-select-option value="190">Saint Jean de Monts</ion-select-option>
+            <ion-select-option value="198">Saint Brévin-les-Pins</ion-select-option>
+            <ion-select-option value="48518">Fromentine</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Vent constant minimum : </ion-label>
+          <ion-input type="number" [(ngModel)]="vent_min1"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Vent constant maximum : </ion-label>
+          <ion-input type="number" [(ngModel)]="vent_max1"></ion-input>
+        </ion-item>
+        <br>
+        <ion-button expand="block" fill="solid" (click)="saveInformations(1)">Enregistrer</ion-button>
+      </ion-card>
+      <br>
+
+      <ion-card>
+        <h6><b>Deuxième Spot</b></h6>
+        <ion-item>
+          <ion-label>Lieu</ion-label>
+          <ion-select [(ngModel)]="spot2" placeholder="Selectionez le spot">
+            <ion-select-option value="48414">Sables d'or</ion-select-option>
+            <ion-select-option value="190">Saint Jean de Monts</ion-select-option>
+            <ion-select-option value="198">Saint Brévin-les-Pins</ion-select-option>
+            <ion-select-option value="48518">Fromentine</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Vent constant minimum : </ion-label>
+          <ion-input type="number" [(ngModel)]="vent_min2"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Vent constant maximum : </ion-label>
+          <ion-input type="number" [(ngModel)]="vent_max2"></ion-input>
+        </ion-item>
+        <br>
+        <ion-button expand="block" fill="solid" (click)="saveInformations(2)">Enregistrer</ion-button>
+      </ion-card>
+      <br>
+
+      <ion-card>
+        <h6><b>Troisième Spot</b></h6>
+        <ion-item>
+          <ion-label>Lieu</ion-label>
+          <ion-select [(ngModel)]="spot3" placeholder="Selectionez le spot">
+            <ion-select-option value="48414">Sables d'or</ion-select-option>
+            <ion-select-option value="190">Saint Jean de Monts</ion-select-option>
+            <ion-select-option value="198">Saint Brévin-les-Pins</ion-select-option>
+            <ion-select-option value="48518">Fromentine</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Vent constant minimum : </ion-label>
+          <ion-input type="number" [(ngModel)]="vent_min3"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Vent constant maximum : </ion-label>
+          <ion-input type="number" [(ngModel)]="vent_max3"></ion-input>
+        </ion-item>
+        <br>
+        <ion-button expand="block" fill="solid" (click)="saveInformations(3)">Enregistrer</ion-button>
+      </ion-card>
+  </div>
+</ion-content>
